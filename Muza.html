@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Muza — Салон красоты в Улан-Удэ</title>
+<meta name="description" content="Muza — салон красоты на ул. Сахьяновой, 7Б/9, Улан-Удэ. Маникюр, педикюр, наращивание ресниц, свадебные причёски, массаж, шугаринг. Рейтинг 5.0, 84 оценки.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,340;0,9..144,440;0,9..144,480;0,9..144,560;1,9..144,420&family=Inter:wght@400;450;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="Muza.css">
+<script>document.documentElement.classList.add('is-preloading');</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BeautySalon",
+  "name": "Muza",
+  "description": "Салон красоты: маникюр, педикюр, наращивание ресниц, свадебные и вечерние причёски, массаж, шугаринг.",
+  "telephone": "+7-950-395-95-58",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "улица Сахьяновой, 7Б/9, офис 5",
+    "addressLocality": "Улан-Удэ",
+    "postalCode": "670047",
+    "addressCountry": "RU"
+  },
+  "openingHours": "Mo-Su 09:00-20:00",
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "5.0",
+    "reviewCount": "84"
+  },
+  "priceRange": "₽₽"
+}
+</script>
+</head>
+<body>
+
+<!-- ===== PRELOADER ===== -->
+<div class="preloader" id="preloader" aria-hidden="true">
+  <div class="preloader__inner">
+    <svg class="preloader__mark" width="76" height="76" viewBox="0 0 76 76" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <circle class="preloader__ring" cx="38" cy="38" r="32" stroke="currentColor" stroke-width="1"/>
+      <path class="preloader__glyph" d="M24 48C24 40 30 34 38 34C46 34 52 40 52 48M38 34V24M31 27L34 31M45 27L42 31" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+    <p class="preloader__word"><em>Muza</em></p>
+    <div class="preloader__bar"><span class="preloader__bar-fill"></span></div>
+  </div>
+</div>
+
+<!-- ===== NAVIGATION ===== -->
+<header class="nav" id="nav">
+  <div class="nav__inner">
+    <a href="#top" class="nav__logo">Muza</a>
+    <nav class="nav__links">
+      <a href="#protocol" class="nav__link">Как проходит визит</a>
+      <a href="#services" class="nav__link">Услуги</a>
+      <a href="#results" class="nav__link">Работы</a>
+      <a href="#reviews" class="nav__link">Отзывы</a>
+      <a href="#trust" class="nav__link">О салоне</a>
+      <a href="#contact" class="nav__link">Запись</a>
+    </nav>
+    <a href="tel:+79503959558" class="nav__phone">+7 950 395-95-58</a>
+    <button class="nav__toggle" id="navToggle" aria-label="Открыть меню" aria-expanded="false" aria-controls="navOverlay">
+      <span class="nav__toggle-lines">
+        <span class="nav__toggle-line"></span>
+        <span class="nav__toggle-line"></span>
+      </span>
+    </button>
+  </div>
+</header>
+
+<!-- ===== MOBILE OVERLAY ===== -->
+<nav class="overlay" id="navOverlay" aria-hidden="true">
+  <ul class="overlay__list">
+    <li><a href="#protocol" class="overlay__link" data-nav-link>Как проходит визит</a></li>
+    <li><a href="#services" class="overlay__link" data-nav-link>Услуги</a></li>
+    <li><a href="#results" class="overlay__link" data-nav-link>Работы</a></li>
+    <li><a href="#reviews" class="overlay__link" data-nav-link>Отзывы</a></li>
+    <li><a href="#trust" class="overlay__link" data-nav-link>О салоне</a></li>
+    <li><a href="#contact" class="overlay__link" data-nav-link>Запись</a></li>
+  </ul>
+  <div class="overlay__footer">
+    <span>ул. Сахьяновой, 7Б/9</span>
+    <span>+7 950 395-95-58</span>
+  </div>
+</nav>
+
+<main id="top">
+
+  <!-- ===== HERO ===== -->
+  <section class="hero" id="hero">
+    <div class="hero__grid">
+      <div class="hero__content" data-reveal="hero">
+        <p class="hero__label">MUZA <span class="hero__label-divider">·</span> УЛАН-УДЭ, УЛ. САХЬЯНОВОЙ, 7Б/9</p>
+        <h1 class="hero__title">Красота —<br>это твоё<br><em>вдохновение.</em></h1>
+        <p class="hero__subtitle">Маникюр, педикюр, наращивание ресниц, свадебные причёски, массаж и шугаринг — всё в одном уютном салоне. Работаем по предварительной записи.</p>
+        <div class="hero__actions">
+          <a href="#contact" class="btn btn--primary">Записаться</a>
+          <a href="#results" class="btn btn--ghost">Смотреть работы</a>
+        </div>
+        <div class="hero__stats">
+          <div class="hero__stat">
+            <span class="hero__stat-num">5.0</span>
+            <span class="hero__stat-label">рейтинг, 84 оценки</span>
+          </div>
+          <div class="hero__stat">
+            <span class="hero__stat-num">54</span>
+            <span class="hero__stat-label">отзыва</span>
+          </div>
+          <div class="hero__stat">
+            <span class="hero__stat-num">9–20</span>
+            <span class="hero__stat-label">ежедневно</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero__media" data-reveal="hero-media">
+        <div class="hero__slider" id="heroSlider">
+          <div class="hero__slider-frame">
+            <img src="img/nail-gold-glitter-accent.jpg" alt="Работа мастера маникюра салона Muza — золотистый акцентный дизайн" class="hero__slider-img">
+          </div>
+        </div>
+        <p class="hero__slider-caption">Реальная работа мастера</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PROTOCOL / PHILOSOPHY ===== -->
+  <section class="protocol" id="protocol">
+    <div class="protocol__inner">
+
+      <div class="protocol__header" data-reveal>
+        <p class="section-label">КАК ПРОХОДИТ ВИЗИТ</p>
+        <h2 class="protocol__title">Уютная атмосфера на <em>каждом этапе.</em></h2>
+      </div>
+
+      <div class="protocol__body">
+        <div class="protocol__media" data-reveal>
+          <img src="img/nail-mauve-matte-wave.jpg" alt="Салон красоты Muza: работа мастера маникюра" loading="lazy" decoding="async">
+        </div>
+
+        <ol class="protocol__steps" data-reveal>
+          <li class="step">
+            <span class="step__num">01</span>
+            <span class="step__title">Запись на удобное время</span>
+            <span class="step__text">Звоните, пишите в WhatsApp или приходите — подберём мастера и время, работаем ежедневно.</span>
+          </li>
+          <li class="step">
+            <span class="step__num">02</span>
+            <span class="step__title">Консультация</span>
+            <span class="step__text">Обсуждаем форму, длину, цвет или тип процедуры — подбираем решение под ваш образ и пожелания.</span>
+          </li>
+          <li class="step">
+            <span class="step__num">03</span>
+            <span class="step__title">Выполнение процедуры</span>
+            <span class="step__text">Маникюр, педикюр, реснички, причёска, массаж или шугаринг — аккуратно и без спешки.</span>
+          </li>
+          <li class="step">
+            <span class="step__num">04</span>
+            <span class="step__title">Рекомендации по уходу</span>
+            <span class="step__text">Подскажем, как продлить результат, и когда лучше прийти на следующую процедуру.</span>
+          </li>
+        </ol>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===== SERVICES ===== -->
+  <section class="services" id="services">
+    <div class="services__inner">
+
+      <div class="services__header" data-reveal>
+        <p class="section-label">УСЛУГИ</p>
+        <h2 class="services__title">Маникюр, ресницы,<br>массаж и не только</h2>
+      </div>
+
+      <div class="services__list-wrap">
+        <ol class="services__list" id="servicesList" data-reveal>
+
+          <li class="service" data-service-image="img/nail-green-gold-foil.jpg">
+            <span class="service__index">01</span>
+            <span class="service__name">Ногтевой сервис</span>
+            <span class="service__meta">
+              <span class="service__note">маникюр, педикюр, гель-лак, наращивание</span>
+            </span>
+          </li>
+
+          <li class="service" data-service-image="img/nail-white-french-glitter.jpg">
+            <span class="service__index">02</span>
+            <span class="service__name">Наращивание ресниц</span>
+            <span class="service__meta">
+              <span class="service__note">LED-технология, держится долго</span>
+            </span>
+          </li>
+
+          <li class="service" data-service-image="img/nail-pink-hearts.jpg">
+            <span class="service__index">03</span>
+            <span class="service__name">Свадебные и вечерние причёски</span>
+            <span class="service__meta">
+              <span class="service__note">на любое торжество</span>
+            </span>
+          </li>
+
+          <li class="service" data-service-image="img/nail-burgundy-shimmer.jpg">
+            <span class="service__index">04</span>
+            <span class="service__name">Массаж</span>
+            <span class="service__meta">
+              <span class="service__note">классический, лимфодренажный, массаж лица</span>
+            </span>
+          </li>
+
+          <li class="service" data-service-image="img/nail-galaxy-accent.jpg">
+            <span class="service__index">05</span>
+            <span class="service__name">Шугаринг</span>
+            <span class="service__meta">
+              <span class="service__note">эпиляция сахарной пастой, от 300 ₽</span>
+            </span>
+          </li>
+
+          <li class="service" data-service-image="img/nail-red-classic.jpg">
+            <span class="service__index">06</span>
+            <span class="service__name">Комплексы шугаринга&nbsp;S&nbsp;/&nbsp;M&nbsp;/&nbsp;L</span>
+            <span class="service__meta">
+              <span class="service__note">подмышки, бикини, ноги, руки — по одной цене</span>
+            </span>
+          </li>
+
+        </ol>
+
+        <div class="services__preview" id="servicesPreview" aria-hidden="true">
+          <div class="services__preview-frame">
+            <img src="" alt="" id="servicesPreviewImg">
+            <button type="button" class="services__preview-close" id="servicesPreviewClose" aria-label="Закрыть превью">✕</button>
+          </div>
+        </div>
+      </div>
+
+      <p class="services__more" data-reveal>Также в Muza: женский педикюр, аппаратный маникюр, гель-лак. Оплата картой, наличными или переводом.</p>
+
+      <!-- ===== PRICE LIST DETAIL ===== -->
+      <div class="price-detail" data-reveal>
+        <div class="price-detail__group">
+          <h3 class="price-detail__title">Массаж</h3>
+          <ul class="price-detail__list">
+            <li><span>Классический массаж всего тела</span><span class="price-detail__dots"></span><span>60 мин / 2000 ₽</span></li>
+            <li><span>Массаж по зонам: воротниковая зона</span><span class="price-detail__dots"></span><span>30 мин / 800 ₽</span></li>
+            <li><span>Массаж спины</span><span class="price-detail__dots"></span><span>30 мин / 1000 ₽</span></li>
+            <li><span>Массаж ног</span><span class="price-detail__dots"></span><span>30 мин / 700 ₽</span></li>
+            <li><span>Массаж рук</span><span class="price-detail__dots"></span><span>30 мин / 700 ₽</span></li>
+            <li><span>Массаж стоп</span><span class="price-detail__dots"></span><span>30 мин / 600 ₽</span></li>
+            <li><span>Лимфодренажный массаж всего тела</span><span class="price-detail__dots"></span><span>60 мин / 1700 ₽</span></li>
+            <li><span>Структурно-пластический массаж лица и тела</span><span class="price-detail__dots"></span><span>60 мин / 2000 ₽</span></li>
+            <li><span>Скульптурно-буккальный массаж лица</span><span class="price-detail__dots"></span><span>60 мин / 1500 ₽</span></li>
+            <li><span>Лимфодренажный массаж лица</span><span class="price-detail__dots"></span><span>60 мин / 1500 ₽</span></li>
+            <li><span>Релакс-массаж с альгинатной маской</span><span class="price-detail__dots"></span><span>60 мин / 1300 ₽</span></li>
+            <li><span>Лимфодренажный массаж лица гуаша</span><span class="price-detail__dots"></span><span>30 мин / 950 ₽</span></li>
+          </ul>
+        </div>
+
+        <div class="price-detail__group">
+          <h3 class="price-detail__title">Шугаринг</h3>
+          <ul class="price-detail__list">
+            <li><span>Усики</span><span class="price-detail__dots"></span><span>300 ₽</span></li>
+            <li><span>Подмышечные впадины</span><span class="price-detail__dots"></span><span>400 ₽</span></li>
+            <li><span>Руки до локтя</span><span class="price-detail__dots"></span><span>800 ₽</span></li>
+            <li><span>Руки полностью</span><span class="price-detail__dots"></span><span>1000 ₽</span></li>
+            <li><span>Голень</span><span class="price-detail__dots"></span><span>800 ₽</span></li>
+            <li><span>Ноги полностью</span><span class="price-detail__dots"></span><span>1600 ₽</span></li>
+            <li><span>Бикини среднее</span><span class="price-detail__dots"></span><span>800 ₽</span></li>
+            <li><span>Бикини глубокое</span><span class="price-detail__dots"></span><span>1500 ₽</span></li>
+            <li class="price-detail__highlight"><span>Комплекс S — подмышки, бикини, голень</span><span class="price-detail__dots"></span><span>2000 ₽</span></li>
+            <li class="price-detail__highlight"><span>Комплекс M — + ноги полностью</span><span class="price-detail__dots"></span><span>3000 ₽</span></li>
+            <li class="price-detail__highlight"><span>Комплекс L — + руки полностью</span><span class="price-detail__dots"></span><span>3600 ₽</span></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="services__footer" data-reveal>
+        <a href="#contact" class="btn btn--primary">Записаться на приём</a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===== RESULTS GALLERY ===== -->
+  <section class="results" id="results">
+    <div class="results__inner">
+
+      <div class="results__header" data-reveal>
+        <p class="section-label">РАБОТЫ</p>
+        <h2 class="results__title">Наши работы — без фильтров.</h2>
+        <p class="results__subtitle">Реальные фото из портфолио мастеров Muza.</p>
+      </div>
+
+      <div class="results__grid" data-reveal-group>
+        <figure class="result-card result-card--wide" data-reveal>
+          <img src="img/nail-green-gold-foil.jpg" alt="Зелёный маникюр с золотой фольгой" loading="lazy" decoding="async">
+          <figcaption>Гель-лак с фольгой</figcaption>
+        </figure>
+        <figure class="result-card" data-reveal>
+          <img src="img/nail-burgundy-shimmer.jpg" alt="Бордовый маникюр с шиммером" loading="lazy" decoding="async">
+          <figcaption>Бордовый шиммер</figcaption>
+        </figure>
+        <figure class="result-card" data-reveal>
+          <img src="img/nail-white-french-glitter.jpg" alt="Белый френч с блестящим акцентным ногтем" loading="lazy" decoding="async">
+          <figcaption>Френч с блёстками</figcaption>
+        </figure>
+        <figure class="result-card" data-reveal>
+          <img src="img/nail-pink-hearts.jpg" alt="Розовый маникюр с сердечками" loading="lazy" decoding="async">
+          <figcaption>Розовый с сердечками</figcaption>
+        </figure>
+        <figure class="result-card" data-reveal>
+          <img src="img/nail-red-classic.jpg" alt="Классический красный маникюр" loading="lazy" decoding="async">
+          <figcaption>Классический красный</figcaption>
+        </figure>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===== REVIEWS ===== -->
+  <section class="reviews" id="reviews">
+    <div class="reviews__inner">
+
+      <div class="reviews__header" data-reveal>
+        <p class="section-label">ОТЗЫВЫ</p>
+        <h2 class="reviews__title">Что говорят наши <em>клиенты.</em></h2>
+        <p class="reviews__subtitle">5.0 из 5 · 84 оценки · 54 отзыва</p>
+      </div>
+
+      <div class="reviews__grid" data-reveal-group>
+        <article class="review-card" data-reveal>
+          <div class="review-card__stars">★★★★★</div>
+          <p class="review-card__text">Самый лучший салон 😍❤️</p>
+          <p class="review-card__author">Частый гость <span class="review-card__date">· март 2026</span></p>
+        </article>
+        <article class="review-card" data-reveal>
+          <div class="review-card__stars">★★★★★</div>
+          <p class="review-card__text">Большое спасибо мастеру Евгении 💞 Сделали безумно красивые реснички ✨ Осталась очень довольна, обязательно вернусь в салон красоты Muza 😊❤️</p>
+          <p class="review-card__author">Алина Панкратова <span class="review-card__date">· апрель 2026</span></p>
+        </article>
+        <article class="review-card" data-reveal>
+          <div class="review-card__stars">★★★★★</div>
+          <p class="review-card__text">Была у мастера Евгении, всё очень понравилось. Уютный салон, удобное месторасположение.</p>
+          <p class="review-card__author">Кристина П. <span class="review-card__date">· апрель 2026</span></p>
+        </article>
+        <article class="review-card" data-reveal>
+          <div class="review-card__stars">★★★★★</div>
+          <p class="review-card__text">Недавно делала себе наращивание ногтей, очень понравилось 🥰 Спасибо мастерам, сам салон очень красивый и уютный, энергетика просто шикарная 💕</p>
+          <p class="review-card__author">Алина Данцаранова <span class="review-card__date">· июнь 2026</span></p>
+        </article>
+        <article class="review-card" data-reveal>
+          <div class="review-card__stars">★★★★★</div>
+          <p class="review-card__text">Большое спасибо Виктории, делает безумно красивые реснички, прихожу уже не первый раз и каждый раз довольна результатом ☺️ LED-реснички держатся долго.</p>
+          <p class="review-card__author">Алёна Викторовна <span class="review-card__date">· май 2026</span></p>
+        </article>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===== TRUST / ABOUT ===== -->
+  <section class="trust" id="trust">
+    <div class="trust__inner">
+      <div class="trust__media" data-reveal>
+        <img src="img/nail-galaxy-accent.jpg" alt="Салон красоты Muza: работа мастера маникюра крупным планом" loading="lazy" decoding="async">
+      </div>
+      <div class="trust__content" data-reveal>
+        <p class="section-label">О САЛОНЕ</p>
+        <h2 class="trust__title">Салон, которому<br>доверяют.</h2>
+        <p class="trust__text">Muza работает в Улан-Удэ уже несколько лет — рейтинг 5.0 на основе 84 оценок и 54 отзыва говорят сами за себя. Мы ценим постоянных клиентов и всегда рады новым.</p>
+        <ul class="trust__list">
+          <li>Рейтинг 5.0 · 84 оценки, 54 отзыва, статус «Подтверждён»</li>
+          <li>Работаем ежедневно, по предварительной записи</li>
+          <li>2 минуты пешком от Роддома</li>
+          <li>Оплата картой, наличными или переводом</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FINAL CTA / CONTACT ===== -->
+  <section class="final-cta" id="contact">
+    <div class="final-cta__inner">
+      <div class="final-cta__content" data-reveal>
+        <p class="section-label">ЗАПИСЬ</p>
+        <h2 class="final-cta__title">Запишитесь<br>уже <em>сегодня.</em></h2>
+        <p class="final-cta__subtitle">Работаем ежедневно, по предварительной записи.</p>
+
+        <div class="final-cta__contacts">
+          <a href="tel:+79503959558" class="contact-row">
+            <span class="contact-row__label">Телефон</span>
+            <span class="contact-row__value">+7 950 395-95-58</span>
+          </a>
+          <a href="https://wa.me/79503959558" class="contact-row" target="_blank" rel="noopener">
+            <span class="contact-row__label">WhatsApp</span>
+            <span class="contact-row__value">Написать в WhatsApp</span>
+          </a>
+          <div class="contact-row contact-row--static">
+            <span class="contact-row__label">Адрес</span>
+            <span class="contact-row__value">г. Улан-Удэ, ул. Сахьяновой, 7Б/9, офис 5, 2 этаж<br><span class="contact-row__meta">Фабричный Маркет, Октябрьский район · 2 мин пешком от Роддома</span></span>
+          </div>
+          <div class="contact-row contact-row--static">
+            <span class="contact-row__label">Режим работы</span>
+            <span class="contact-row__value">Ежедневно<br><span class="contact-row__meta">по предварительной записи</span></span>
+          </div>
+          <div class="contact-row contact-row--static">
+            <span class="contact-row__label">Оплата</span>
+            <span class="contact-row__value">Картой · наличными · переводом на карту</span>
+          </div>
+        </div>
+
+        <div class="final-cta__actions">
+          <a href="tel:+79503959558" class="btn btn--primary btn--large">Позвонить</a>
+          <a href="https://wa.me/79503959558" class="btn btn--ghost btn--large" target="_blank" rel="noopener">Написать в WhatsApp</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ===== FOOTER ===== -->
+<footer class="footer" id="footer">
+  <div class="footer__inner">
+    <div class="footer__brand">
+      <p class="footer__logo">Muza</p>
+      <p class="footer__tagline">САЛОН КРАСОТЫ · УЛАН-УДЭ</p>
+    </div>
+
+    <div class="footer__info">
+      <p>ул. Сахьяновой, 7Б/9, Улан-Удэ</p>
+      <p>+7 950 395-95-58</p>
+    </div>
+
+    <div class="footer__social">
+      <a href="https://wa.me/79503959558" class="footer__link" target="_blank" rel="noopener">WhatsApp</a>
+      <a href="#" class="footer__link">VK</a>
+      <a href="#" class="footer__link">2ГИС</a>
+    </div>
+  </div>
+  <div class="footer__bottom">
+    <p>© 2026 Muza · Салон красоты · Маникюр · Ресницы · Массаж</p>
+  </div>
+</footer>
+
+<script src="Muza.js" defer></script>
+</body>
+</html>
